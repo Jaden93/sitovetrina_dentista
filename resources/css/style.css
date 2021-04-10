@@ -1,0 +1,114 @@
+:root {
+    --background-color:#EFF0E8;
+    --sec-color:#BECB3D;
+    --third-color:#206B8A;
+}
+
+
+
+ h3,h4,h5,a {
+    font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ h1,h2 {
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ .custom-navbar {
+     background-color: var(--background-color);
+}
+
+.navbar-toggler {
+    background-color: var(--third-color);
+}
+
+
+
+.custom-info-navbar {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* fine navbar */
+
+
+
+
+.custom-header {
+     background-color: var(--background-color);
+     height: 75vh;
+}
+
+.custom-info {
+    font-size: 14px;
+}
+
+.img {
+    background-image: url(https://www.matteofrozzi.it/wp-content/uploads/2015/05/1.jpg);
+     float: left;
+        /* opacity: 0;  */
+    display: block; 
+    z-index: 1;
+    background-position:right;
+}
+
+.custom-info-button {
+
+ 
+    font-size: 18px;
+
+}
+
+.custom-info-button:hover {
+    transition:0.7s;
+    background-color: rgb(0, 45, 129);
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+
+/*  footer */
+
+.custom-footer {
+    position: relative;
+    bottom: 0;
+    background-color: #4B4B46;
+    color: white;
+    padding-top: 40px;
+}
+
+
+@media (max-width: 800px) {
+    .dis {
+        display: none;
+    }
+    .custom-header {
+        background-image: url(https://www.matteofrozzi.it/wp-content/uploads/2015/05/1.jpg);
+        opacity: 0.9;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 60vh;
+        background-position: center;
+    }
+
+    .custom-info-navbar {
+    text-align:left;
+    font-size: 14px;
+    margin-left: 0px!important;
+    margin-top: 10px;
+ 
+    }
+    .custom-info-button {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        width: 60%;
+    }
+
+}
