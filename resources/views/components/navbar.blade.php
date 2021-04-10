@@ -12,7 +12,7 @@
       <div class="collapse navbar-collapse row" id="navbarNavAltMarkup">
        
           <div class="m-3 navbar-nav ">
-            <a class="col-1 custom-info-navbar nav-link" href="#">STAFF</a>
+            <a class="col-1 custom-info-navbar nav-link" href="{{route('staff')}}">STAFF</a>
             <a class="col-1 custom-info-navbar nav-link" href="#">PERCHE' SCEGLIERCI</a>
             <a class="col-1 custom-info-navbar nav-link" href="#">DOVE SIAMO</a>
             <a class="col-1 custom-info-navbar nav-link" href="#">CONTATTI</a>
