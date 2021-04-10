@@ -10901,6 +10901,36 @@ textarea.form-control-lg {
 
 }
 
+.article-color {
+    color: var(--third-color);
+}
+/* section */
+.bg-custom-section {
+    background-color: var(--sec-color);
+}
+.custom-section {
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.custom-section .custom-info-button {
+    background-color: var(--sec-color);
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.row .img-section{
+    padding-right: 0;
+    padding-left: 0;
+}
+/* fine section */
+
+
+
 
 /*  footer */
 
@@ -10939,6 +10969,14 @@ textarea.form-control-lg {
         display: flex;
         width: 60%;
     }
+
+    .img-section {
+        display: none;
+    }
+
+    
+
+    
 
 }
 
