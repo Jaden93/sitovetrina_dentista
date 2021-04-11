@@ -14,12 +14,22 @@ class PublicController extends Controller
               ['nome'=>'Tel chi','cognome'=>'El telùn','img'=>url("https://cinema.icrewplay.com/wp-content/uploads/2019/06/GAL_5-696x368.jpg"),'descrizione'=>'Ma certo! Ho capito benissimo! Classico caso di tossico dipendenza, DROGATO! Questa è la verità. ']
     ];
 
-
         return view('staff',['staff'=>$staff]);
     }
+
+    public function sceglierci() {
+
+     
+            return view('seguirci');
+    }
+
+    public function dovesiamo() {
+            return view('dovesiamo');
+    }
+
+
+    public function contatti() {
+        return view('contatti');
+    }
+
 }
-
-
-
-
-

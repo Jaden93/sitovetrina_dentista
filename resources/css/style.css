@@ -8,6 +8,7 @@
 
  h3,h4,h5,a {
     font-family: 'Roboto Condensed', sans-serif;
+
  }
 
  h1,h2 {
@@ -22,7 +23,13 @@
     background-color: var(--third-color);
 }
 
+.bg-color-blue {
+    background-color: var(--third-color);
+}
 
+.font-sec-color {
+    color: var(--sec-color);
+}
 
 .custom-info-navbar {
     font-size: 12px;
@@ -32,32 +39,108 @@
 
 /* fine navbar */
 
+.due-colonne {
+    -webkit-column-count: 2;
+     -webkit-column-gap: 20px;
+     column-count: 2;
+     column-gap: 20px;
+}
+.img-circle {
+    background-color: transparent;
+    border: 16px solid #dedfd7;
+    width: 190px;
+    
+
+}
+.img-dente
 
 
+.img-staff {
+    float: left;
+    background-repeat: no-repeat;
+    display: block;
+    z-index: 2;
+    background-size: 100%;
+    position: relative;
+}
 
+
+.img-staff::before {
+    content: "";
+    background-image: url("https://scontent-mxp1-2.xx.fbcdn.net/v/t1.18169-9/27750542_1404535026325263_8656105696049751561_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=kzx3k7GK0AQAX86dfI5&_nc_ht=scontent-mxp1-2.xx&oh=1033245f774a2bf173612d8e4bcd507a&oe=60974591");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(80);
+    opacity: 0.7;
+}
 .custom-header {
      background-color: var(--background-color);
      height: 75vh;
 }
 
+
+.bg-color {
+    background-color: var(--background-color);
+}
+
 .custom-info {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .img {
-    background-image: url(https://www.matteofrozzi.it/wp-content/uploads/2015/05/1.jpg);
+    background-image: url("https://www.matteofrozzi.it/wp-content/uploads/2015/05/1.jpg");
      float: left;
-        /* opacity: 0;  */
     display: block; 
     z-index: 1;
     background-position:right;
 }
 
+.m-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.img-scegliere {
+    float: left;
+    background-repeat: no-repeat;
+    display: block;
+    z-index: 2;
+    background-size: 100%;
+    position: relative;
+    
+}
+
+.img-scegliere::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("https://www.matteofrozzi.it/wp-content/uploads/2015/05/studio-dentistico-frozzi_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: bottom;
+    filter: brightness(1.3) invert(0.17) saturate(2.6) sepia(0.25) url('#squiggly-1');
+
+
+
+}
+.daje {
+    position: relative;
+}
 .custom-info-button {
 
  
     font-size: 18px;
 
+}
+
+.section-font {
+    font-size: 42px;
 }
 
 .custom-info-button:hover {
@@ -99,9 +182,30 @@
     padding-left: 0;
     height: auto;
 }
+
+.custom-heigth {
+    height: 70vh;
+}
+
 /* fine section */
+/* 
+ .parallax {
+    background-image: url("https://i.pinimg.com/originals/b4/24/74/b42474b3297e9c512a6c23ff2235c26d.jpg");
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }  */
 
+.parallax {
+    background-image: url("https://i.pinimg.com/originals/b4/24/74/b42474b3297e9c512a6c23ff2235c26d.jpg");
+    background-size: 700px auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: left;
 
+}
 /*  staff section */
  
  .text-pos {
@@ -156,6 +260,9 @@
         height: 60vh;
         background-position: center;
     }
+
+
+  
 
     .custom-info-navbar {
     text-align:left;
