@@ -237,6 +237,14 @@
     background-position: left;
 
 }
+    
+.parallax2 {
+    background-image: url("https://s1.dmcdn.net/v/A77MK1UO5DQYxG0sm/x240");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 /*  staff section */
  
  .text-pos {
@@ -292,7 +300,6 @@
    
     .custom-header {
         background-image: url(https://www.matteofrozzi.it/wp-content/uploads/2015/05/1.jpg);
-        opacity: 0.9;
         background-size: contain;
         background-repeat: no-repeat;
         height: 60vh;
@@ -319,7 +326,7 @@
         margin-left: auto;
         margin-right: auto;
         display: flex;
-        width: 60%;
+        width: 40%;
     }
 
     .img-section {
@@ -342,10 +349,16 @@
         display: none;
     }
 
+    .img-circle-center {
+        text-align: center;
+    }
     .comp {
         width: 80%;
        }
     
+       .z-index {
+           z-index: 1000;
+       }
     .transition-section .bg-color-blue {
         background-color: transparent;
         background-image: url("https://i.pinimg.com/originals/b4/24/74/b42474b3297e9c512a6c23ff2235c26d.jpg");
@@ -354,6 +367,16 @@
         margin-right: auto;
         margin-left: auto;
         background-attachment: fixed;
+    }
+
+    .media-parllax2 {
+        background-color: transparent;
+        background-image: url("https://media4.giphy.com/media/dv78V39sfMssrjpHWO/giphy.gif");
+        background-position: center;
+        width: 100%;
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 
     .custom-info-button {

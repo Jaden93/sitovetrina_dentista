@@ -4,7 +4,7 @@
 
 
         @if (session('message'))
-        <div class="col-12 container-fluid center custom-header mb-5 alert bg-dark alert-success">
+        <div class="col-12 container-fluid center z-index mb-5 alert bg-dark alert-success">
              <h2 class="display-5 text-light">
                 Abbiamo ricevuto la sua email per rifarsi i denti gialli che si ritrova, ora  
                 La invito a refreshare</h2>
@@ -29,7 +29,7 @@
                     <a class="col-1 custom-info-navbar nav-link" href="{{route('sceglierci')}}">PERCHE' SCEGLIERCI</a>
                     <a class="col-1 custom-info-navbar nav-link" href="{{route('dovesiamo')}}">DOVE SIAMO</a>
                     <a class="col-1 custom-info-navbar nav-link" href="{{route('contatti')}}">CONTATTI</a>
-                    <a class="ms-5 p-1 btn btn-primary col-2 custom-info-navbar" href="#">PRENOTA VISITA</a>
+                    <a class="ms-5 p-1 btn btn-primary col-2 custom-info-navbar" href="{{route('primoapp')}}">PRENOTA VISITA</a>
                 </div>
             </div>
         </div>

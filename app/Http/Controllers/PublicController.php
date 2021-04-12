@@ -20,8 +20,11 @@ class PublicController extends Controller
 
     public function sceglierci() {
 
-     
-            return view('seguirci');
+        $descriptions = [['title'=>'I migliori professionisti','descrizione'=>'Negli Studi Dentistici Dr. Frozzi puoi contare su un team d’eccellenza nel campo dell’odontoiatria d’avanguardia. La nostra équipe riunisce alcuni dei migliori medici odontoiatri del nord Italia, con specializzazioni nelle nuove tecniche digitalizzate e una lunga esperienza clinica e di ricerca.Gli specialisti che lavorano con Matteo Frozzi possono avvalersi del supporto di personale paramedico altamente qualificato e sempre aggiornato, così da offrirti la massima professionalità e le migliori prestazioni.','img'=>url('https://www.matteofrozzi.it/wp-content/uploads/2015/05/strumenti-1.jpg')],
+            ['title'=>'Le tecnologie più avanzate','descrizione'=>'Oggi la tecnologia sta trasformando il modo stesso di concepire l’odontoiatria, e tu hai l’opportunità di scegliere quei professionisti che meglio sanno applicarla nella cura del paziente.Tutte le apparecchiature a disposizione degli Studi Dentistici Dr. Frozzi sono le più sofisticate e all’avanguardia: grazie alla nostra tac a bassissimo dosaggio di radiazioni, ad esempio, puoi sottoporti agli esami diagnostici direttamente in studio, senza attese.La tempestività delle prestazioni è favorita anche dall’impiego di software di ultima generazione, per interventi più rapidi e meno invasivi.','img'=>url('https://www.matteofrozzi.it/wp-content/uploads/2015/05/strumenti-2.jpg')]
+        ];
+
+            return view('seguirci',['descriptions'=>$descriptions]);
     }
 
     public function dovesiamo() {
@@ -54,4 +57,9 @@ class PublicController extends Controller
         return redirect(route('homepage'))->with('message','Abbiamo ricevuto la tua richiesta, verrai ricontattato a breve');
 
     }
+
+    public function primoapp() {
+        return view('primoapp');
+    }
+
 }

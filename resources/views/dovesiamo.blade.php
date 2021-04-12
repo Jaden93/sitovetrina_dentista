@@ -2,7 +2,7 @@
 
     <x-navbar />
     <header>
-        <div class="container-fluid center custom-staff-header bg-light mb-5">
+        <div class="padding-top container-fluid center custom-staff-header bg-light mb-5">
             <div class="container w-75">
                 <div class="row">
                     <div class="pt-5 col-md-6 col-12">

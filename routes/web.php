@@ -26,3 +26,5 @@ Route::get('/dove-siamo',[PublicController::class,'dovesiamo'])->name('dovesiamo
 Route::get('/contatti',[PublicController::class,'contatti'])->name('contatti');
 
 Route::post('/contatti/submit',[PublicController::class,'feedback'])->name('feedback');
+
+Route::get('/primo-appuntamento',[PublicController::class,'primoapp'])->name('primoapp');
