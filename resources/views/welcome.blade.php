@@ -1,13 +1,21 @@
 <x-layout>
 
-    <nav class="navbar navbar-expand-lg  custom-navbar  align-items-center">
+    <nav class="navbar position-fixed navbar-expand-lg  custom-navbar  align-items-center">
 
 
+        @if (session('message'))
+        <div class="col-12 container-fluid center custom-header mb-5 alert bg-dark alert-success">
+             <h2 class="display-5 text-light">
+                Abbiamo ricevuto la sua email per rifarsi i denti gialli che si ritrova, ora  
+                La invito a refreshare</h2>
+                <a href="{{route('homepage')}}" class="col-3 p-3 btn btn-primary">REFRESH HOMEPAGE</a>
 
+        </div>
+    @endif
 
         <div class="container-fluid">
             <div class="d flex  ">
-                <a class="navbar-brand" href={{route('homepage')}}>DR FOZZI</a>
+                <a class="navbar-brand" href={{route('homepage')}}>DentNET</a>
                 <p class="custom-info-navbar">STUDI DENTISTICI</p>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -97,16 +105,14 @@
                     <a class="mt-5 custom-info-button btn btn-primary" href="">Scopri di più</a>
 
                 </div>
-
-
-
             </div>
-
-        </div>
-        </div>
-
         </div>
     </section>
+
+
+
+
+
 
 
 

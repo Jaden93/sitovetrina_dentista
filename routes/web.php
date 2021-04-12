@@ -24,3 +24,5 @@ Route::get('/perche-sceglierci',[PublicController::class,'sceglierci'])->name('s
 Route::get('/dove-siamo',[PublicController::class,'dovesiamo'])->name('dovesiamo');
 
 Route::get('/contatti',[PublicController::class,'contatti'])->name('contatti');
+
+Route::post('/contatti/submit',[PublicController::class,'feedback'])->name('feedback');
