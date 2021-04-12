@@ -46,7 +46,7 @@
                 <div class="border mt-3 img-section col-md-6 col-12">   
                     <img class="img-fluid" src={{$el['img']}} alt="">
                 </div>
-                <div class="border mt-3 bg-primary custom-section col-md-6 col-12">    
+                <div class="resize border mt-3 bg-primary custom-section col-lg-6 col-12">    
                     <h2 class="mt-5">{{$el['nome'].' '.$el['cognome']}}</h2>
                     <p class="mt-5">{{$el['descrizione']}}</p>
                     <a class="mt-5 custom-info-button btn btn-primary" href="">Scopri di più</a>

@@ -1,6 +1,6 @@
 <x-layout>
 
-    <x-navbar/>
+    <x-navbar />
 
     <section>
         <div class="container">
@@ -18,45 +18,49 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        </div>
+    </section>
 
 
 
 
-    <form>  
+    <form>
         <div class="pt-5 container">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="d-flex ">
-                        <img class="img-dente"src="https://www.matteofrozzi.it/wp-content/uploads/2015/05/contact-icon1.png" alt="">
-                        <h2 class="article-color">Hai bisogno di informazioni sui nostri studi dentistici?</h2>
-                     </div>
-                        <div class="row">
-                        <p class="col-2"></p>
-                        <p class="col-6 article-color">Compila il form e seleziona dal menu a tendina l’argomento della tua richiesta.
-                            Ti risponderemo nel più breve tempo possibile.</p>
-                        </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <img class="col-lg-2 col-2 img-dente"
+                            src="https://www.matteofrozzi.it/wp-content/uploads/2015/05/contact-icon1.png" alt="">
+                        <h2 class="col-sm-9 article-color">Hai bisogno di informazioni sui nostri studi dentistici?</h2>
                     </div>
-                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <p class="col-2"></p>
+                        <p class="col-6 article-color">Compila il form e seleziona dal menu a tendina l’argomento della
+                            tua richiesta.
+                            Ti risponderemo nel più breve tempo possibile.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
                     <div class="row">
                         <form method="post" action="">
-                            <label class="custom-info   col-6" for="">NOME</label>
-                            <label class="custom-info  col-6" for="">COGNOME</label>
-                            <input class="col-5" type="text">
-                            <input class="col-5" type="text">
-                            </div>
-                            <label class="custom-info article-color col-5 mt-3" for="">EMAIL</label>
-                            <label class="custom-info article-color col-5 mt-3" for="">TELEFONO</label>
-                            <input class="col-5" type="text">
-                            <input class="col-5" type="text">
-                            <label class="custom-info article-color col-12 mt-3" for="">MESSAGGIO</label>
-                            <textarea class="col-12"name="" id="" cols="30" rows="10"></textarea>
+                            <label class="custom-label custom-info article-color col-5 col-md-5" for="">NOME</label>
+                            <label class="custom-label custom-info article-color col-5 col-md-5" for="">COGNOME</label>
+                            <input class="custom-input col-5" type="text">
+                            <input class="custom-input col-5" type="text">
+                            <label class="custom-label col-5 custom-info article-color  col-md-5 mt-3" for="">EMAIL</label>
+                            <label class="custom-label col-5 custom-info article-color  col-md-5 mt-3" for="">TELEFONO</label>
+                            <input class="custom-input col-5 col-md-5" type="text">
+                            <input class="custom-input col-5 col-md-5" type="text">
+                            <label class="custom-label custom-info article-color col-12 mt-3" for="">MESSAGGIO</label>
+                            <textarea class="col-12 custom-input" name="" id="" cols="30" rows="10"></textarea>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
 
 
     </form>

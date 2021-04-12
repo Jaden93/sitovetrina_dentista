@@ -21,81 +21,56 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="img-section col-md-6 col-12">
-                    <img class=" img-fluid" src="https://www.matteofrozzi.it/wp-content/uploads/2020/11/vicenza.jpg"
-                        alt="">
+
+                @forEach ($luogo as $el)
+
+
+                @if ($el['sede'] == 'Studio di Cento')
+              
+            <div class="bg-color-blue custom-section col-md-6 mb-4 col-12">
+                <h2 class="">{{$el['sede']}}</h2>
+                <p class="">{{$el['via']}}</p>
+                <div class="due-colonne">
+                    <p> <span class="font-sec-color">Orario</span><br>
+                        {{$el['giorni']}} <br>
+                        {{$el['orario']}} </p>
+                    <p><span class="font-sec-color">T</span><br>
+                        {{$el['tel']}}</p>
                 </div>
-                <div class="bg-color-blue custom-section col-md-6 col-12">
-                    <h2 class="">Studio di Vicenza</h2>
-                    <p class="">Viale Mercato Nuovo, 44/F - 36100 Vicenza (VI)</p>
+
+                <a class="mt-5 custom-info-button btn btn-primary" href="">CONTATTA LO STUDIO</a>
+                <a class="mt-2 custom-info-button btn btn-primary" href="">COME ARRIVARE</a>
+            </div>
+            <div class="img-section  col-md-6 mb-4 col-12">
+                <img class="img-fluid img-map" src="https://www.matteofrozzi.it/wp-content/uploads/2020/11/vicenza.jpg"
+                    alt="">
+            </div>   
+                @else
+                    <div class="img-section  col-md-6 mb-4 col-12">
+                        <img class="img-fluid img-map" src="https://www.matteofrozzi.it/wp-content/uploads/2020/11/vicenza.jpg"
+                            alt="">
+                    </div>
+                <div class="bg-color-blue custom-section col-md-6 mb-4 col-12">
+                    <h2 class="">{{$el['sede']}}</h2>
+                    <p class="">{{$el['via']}}</p>
                     <div class="due-colonne">
                         <p> <span class="font-sec-color">Orario</span><br>
-                            Lunedì e Mercoledì<br>
-                            09.00 - 13:00<br>
-                            15.00 - 19.30</p>
-
-                        <p> <br>Martedì, Giovedì e Venerdì<br>
-                            09.00 - 19:00</p>
-
+                            {{$el['giorni']}} <br>
+                            {{$el['orario']}} </p>
                         <p><span class="font-sec-color">T</span><br>
-                            0444 960057</p>
+                            {{$el['tel']}}</p>
                     </div>
 
                     <a class="mt-5 custom-info-button btn btn-primary" href="">CONTATTA LO STUDIO</a>
                     <a class="mt-2 custom-info-button btn btn-primary" href="">COME ARRIVARE</a>
                 </div>
-                <div class="bg-color-blue custom-section col-md-6 col-12">
-                    <h2 class="">Studio di Vicenza</h2>
-                    <p class="">Viale Mercato Nuovo, 44/F - 36100 Vicenza (VI)</p>
-                    <div class="due-colonne">
-                        <p> <span class="font-sec-color">Orario</span><br>
-                            Lunedì e Mercoledì<br>
-                            09.00 - 13:00<br>
-                            15.00 - 19.30</p>
-
-                        <p> <br>Martedì, Giovedì e Venerdì<br>
-                            09.00 - 19:00</p>
-
-                        <p><span class="font-sec-color">T</span><br>
-                            0444 960057</p>
-                    </div>
-
-                    <a class="mt-5 custom-info-button btn btn-primary" href="">CONTATTA LO STUDIO</a>
-                    <a class="mt-2 custom-info-button btn btn-primary" href="">COME ARRIVARE</a>
-                </div>
-                <div class="img-section col-md-6 col-12">
-                    <img class="img-fluid" src="https://www.matteofrozzi.it/wp-content/uploads/2020/11/cento.jpg"
-                        alt="">
-                </div>
-                <div class="img-section col-md-6 col-12">
-                    <img class=" img-fluid" src="https://www.matteofrozzi.it/wp-content/uploads/2020/11/ferrara.jpg"
-                        alt="">
-                </div>
-                <div class="bg-color-blue custom-section col-md-6 col-12">
-                    <h2 class="">Studio di Vicenza</h2>
-                    <p class="">Viale Mercato Nuovo, 44/F - 36100 Vicenza (VI)</p>
-                    <div class="due-colonne">
-                        <p> <span class="font-sec-color">Orario</span><br>
-                            Lunedì e Mercoledì<br>
-                            09.00 - 13:00<br>
-                            15.00 - 19.30</p>
-
-                        <p> <br>Martedì, Giovedì e Venerdì<br>
-                            09.00 - 19:00</p>
-
-                        <p><span class="font-sec-color">T</span><br>
-                            0444 960057</p>
-                    </div>
-
-                    <a class="mt-5 custom-info-button btn btn-primary" href="">CONTATTA LO STUDIO</a>
-                    <a class="mt-2 custom-info-button btn btn-primary" href="">COME ARRIVARE</a>
-                </div>
+                @endif
+                @endForEach
             </div>
         </div>
-        </div>
-
-        </div>
     </section>
+
+
 
 
     <section>
@@ -110,7 +85,7 @@
                             Il team si avvale del supporto di personale paramedico altamente qualificato e sempre
                             aggiornato.</p>
                         <div class="col-12">
-                            <a class="m-2 custom-info-button btn btn-primary" href="">SCOPRI CHI SIAMO</a>
+                            <a class="m-2 custom-info-button btn btn-primary" href="{{route('staff')}}">SCOPRI CHI SIAMO</a>
                         </div>
                     </div>
                 </div>
