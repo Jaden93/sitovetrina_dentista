@@ -10834,6 +10834,36 @@ textarea.form-control-lg {
 }
 
 
+body {
+    -webkit-animation: transitionIn 0.55s;
+            animation: transitionIn 0.55s;
+}
+@-webkit-keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotate(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotate(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
+
+
  h3,h4,h5,a {
     font-family: 'Roboto Condensed', sans-serif;
 
@@ -10865,6 +10895,10 @@ textarea.form-control-lg {
     text-align: center;
 }
 
+
+.aos-animate  {
+    background-color: var(--background-color);
+}
 
 /* fine navbar */
 

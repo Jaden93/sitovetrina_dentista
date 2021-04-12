@@ -42,7 +42,7 @@
 
     <section>
         @forEach ($descriptions as $description)
-        <div class=" container-fluid bg-color pb-5">
+        <div class=" container-fluid bg-color pb-5" data-aos="fade-out">
             <div class="container ">
                 <div class="row ">
                     <div class="col-md-3 col-12  img-circle-center ">

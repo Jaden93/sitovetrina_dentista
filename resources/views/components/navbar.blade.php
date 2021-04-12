@@ -1,6 +1,6 @@
 
 
-<nav class="navbar navbar-expand-lg  mb-5 position-fixed custom-navbar  align-items-center">
+<nav class="navbar navbar-expand-lg  mb-5 position-fixed custom-navbar align-items-center" data-aos="area-menu" data-aos="zoom-in" >
     <div class="container-fluid">
       <div class="d flex  ">
         <a class="navbar-brand" href={{route('homepage')}}>DentNET</a>

@@ -42,7 +42,7 @@
     </article>
 
     <section>
-        <div class="container">
+        <div class="container"     data-aos="fade-up">
             <div class="row">
                 @forEach ($staff as $el)
                 <div class="border mt-3 img-section col-md-6 col-12">
